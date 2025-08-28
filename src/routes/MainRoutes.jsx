@@ -1,9 +1,10 @@
 import React, { useRef } from 'react'
 import Home from '../pages/Home'
-import Projects from '../pages/Projects'
 import { Route, Routes } from 'react-router-dom'
 import Agency from '../pages/Agency'
 import Navbar from '../components/navigation/Navbar'
+import Works from '../pages/Works'
+import FullScreenNav from '../components/navigation/FullScreenNav'
 
 
 const MainRoutes = () => {
@@ -14,7 +15,8 @@ const MainRoutes = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/agency' element={<Agency />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/works' element={<Works />} />
+        <Route path='/full-screen-nav' element={<FullScreenNav />} />
       </Routes>
     </div>
   )
