@@ -4,9 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import MainRoutes from './routes/MainRoutes.jsx'
+import Stairs from './components/common/Stairs.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <MainRoutes />
+    <Stairs>
+      <App />
+    </Stairs>
   </BrowserRouter>,
 )
