@@ -5,6 +5,7 @@
   font-family: font1;
   src: url(/assets/fonts/Lausanne-300.woff2);
 }
+
 @font-face {
   font-family: font2;
   src: url(/assets/fonts/Lausanne-500.woff2);
@@ -21,5 +22,29 @@ body {
   width: 100%;
   background-color: #111;
   color: white;
-  overflow-x: hidden
+  /* overflow-x: hidden */
+}
+
+.moveX{
+  animation-name: moveAnimation;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+.moveLink{
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.link:hover .moveLink{
+  opacity: 1;
+}
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

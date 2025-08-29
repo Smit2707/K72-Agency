@@ -11,12 +11,13 @@ const MainRoutes = () => {
   
   return (
     <div className='text-white'>
-      <Navbar />
+      {/* <Navbar /> */}
+      <FullScreenNav />
       <Routes>
-        <Route path='/' element={<Home />} />
+        {/* <Route path='/' element={<Home />} />
         <Route path='/agency' element={<Agency />} />
-        <Route path='/works' element={<Works />} />
-        <Route path='/full-screen-nav' element={<FullScreenNav />} />
+        <Route path='/works' element={<Works />} /> */}
+        {/* <Route path='/full-screen-nav' element={<FullScreenNav />} /> */}
       </Routes>
     </div>
   )
